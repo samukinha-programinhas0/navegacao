@@ -5,9 +5,11 @@ import ListaUsuarios from "./pages/Usuarios";
 
 function App() {
   return (
-    <><div>
-      <h1>ola, react com vite</h1>
-    </div><BrowserRouter>
+    <>
+      <div>
+        <h1>ola, react com vite</h1>
+      </div>
+      <BrowserRouter>
         <nav>
           <Link to="/">Home</Link> | <Link to="/contador">Contador</Link> | <Link to="/usuarios">Usuários</Link>
         </nav>
@@ -16,7 +18,8 @@ function App() {
           <Route path="/contador" element={<Contador />} />
           <Route path="/usuarios" element={<ListaUsuarios />} />
         </Routes>
-      </BrowserRouter></>
+      </BrowserRouter>
+    </>
   );
 }
 
